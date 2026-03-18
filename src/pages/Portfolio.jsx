@@ -157,11 +157,10 @@ const Portfolio = () => {
       {/* Stats Section */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {[
-              { number: "150+", label: "Projects Completed" },
+              { number: "100+", label: "Projects Completed" },
               { number: "50+", label: "Happy Clients" },
-              { number: "15+", label: "Awards Won" },
               { number: "98%", label: "Client Satisfaction" },
             ].map((stat, index) => (
               <motion.div

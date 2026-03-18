@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import haitamImage from "../Assets/images/haitam.png";
+import donelImage from "../Assets/images/donel.jpeg";
+import fregisImage from "../Assets/images/freg.jpg";
 
 const About = () => {
   const teamMembers = [
@@ -14,21 +16,36 @@ const About = () => {
           className="w-full h-full object-cover rounded-full"
         />
       ),
-      bio: "Passionate full-stack developer dedicated to transforming bold ideas into scalable, innovative digital solutions.",
+      bio: "Passionate about full-stack development, focused on transforming bold ideas into scalable and innovative digital solutions through strong technical expertise and problem-solving.",
       linkedin: "https://www.linkedin.com/in/haitam-el-atifi-9a1b4b1b3/",
       github: "https://github.com/Elatifi01",
     },
     {
-      name: "donel ",
-      role: "**",
-      image: "👨‍💻",
-      bio: "***",
+      name: "ATARGA ONDO Donel ",
+      role: "Front end developpers & designer graphic",
+      image: (
+        <img
+          src={donelImage}
+          alt="ATARGA ONDO Donel"
+          className="w-full h-full object-cover rounded-full"
+        />
+      ),
+      bio: "Front-end Developer with a designer's eye,I strive to create bridges between technical complexity and visual clarity to enhance the user experience.",
+      linkedin: "https://ma.linkedin.com/in/atarga-ondo-donel-b7b2b0347",
+      github: "https://github.com/Grhymm",
     },
     {
-      name: "Freg",
-      role: "**",
-      image: "👩‍🎨",
-      bio: "***",
+      name: "Fregis Omanda",
+      role: "Designer - Developper",
+      image: (
+        <img
+          src={fregisImage}
+          alt="Fregis Omanda"
+          className="w-full h-full object-cover rounded-full"
+        />
+      ),
+      bio: "Driven by a deep fascination with visual storytelling and technology, this self-taught journey is shaped by continuous learning, experimentation, and a commitment to mastering new techniques.",
+      github: "https://github.com/Fregis241",
     },
   ];
 
@@ -328,6 +345,8 @@ const About = () => {
                 <div className="flex justify-center space-x-3 mt-6">
                   <a
                     href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gradient-primary hover:text-white transition-all duration-300"
                   >
                     <svg
@@ -340,6 +359,8 @@ const About = () => {
                   </a>
                   <a
                     href={member.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gradient-primary hover:text-white transition-all duration-300"
                   >
                     <svg
