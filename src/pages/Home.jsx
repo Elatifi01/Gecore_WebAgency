@@ -117,16 +117,22 @@ const Home = () => {
                 your vision to life.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
-                <Link to="/contact" className="btn-gradient w-full sm:w-auto text-center">
+                <Link
+                  to="/contact"
+                  className="btn-gradient w-full sm:w-auto text-center"
+                >
                   Start Your Project
                 </Link>
-                <Link to="/portfolio" className="btn-outline w-full sm:w-auto text-center">
+                <Link
+                  to="/portfolio"
+                  className="btn-outline w-full sm:w-auto text-center"
+                >
                   View Our Work
                 </Link>
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-8 max-w-md mx-auto md:mx-0">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pb-4 pt-8 max-w-md mx-auto md:mx-0">
                 <div>
                   <h3 className="text-4xl font-montserrat font-bold text-primary-blue">
                     360°
