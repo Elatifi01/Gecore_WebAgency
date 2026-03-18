@@ -143,7 +143,7 @@ const Home = () => {
                 </div>
                 <div>
                   <h3 className="text-4xl font-montserrat font-bold text-primary-green">
-                    27/7
+                    24/7
                   </h3>
                   <p className="text-gray-600 font-roboto">support</p>
                 </div>
