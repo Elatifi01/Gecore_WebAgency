@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import gecoreLogo from "../Assets/images/gecore-logo.png";
+import gecoreLogo from "../Assets/images/gecore-logo.webp";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import hospitaImage from "../Assets/images/hospital-management.png";
-import skillTrackerImage from "../Assets/images/dashboardSkillTracker.png";
-import Branding1Image from "../Assets/images/PartnersSarl.jpg";
-import Branding2Image from "../Assets/images/Lobickam.jpg";
-import BlogImage from "../Assets/images/blog.png";
-import EbolokoImage from "../Assets/images/Eboloko.jpg";
+import hospitaImage from "../Assets/images/hospital-management.webp";
+import skillTrackerImage from "../Assets/images/dashboardSkillTracker.webp";
+import Branding1Image from "../Assets/images/PartnersSarl.webp";
+import Branding2Image from "../Assets/images/lobickam.webp";
+import BlogImage from "../Assets/images/blog.webp";
+import EbolokoImage from "../Assets/images/Eboloko.webp";
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState("tous");

@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import haitamImage from "../Assets/images/haitam.png";
-import donelImage from "../Assets/images/donel.jpeg";
-import fregisImage from "../Assets/images/freg.jpg";
+import haitamImage from "../Assets/images/haitam.webp";
+import donelImage from "../Assets/images/donel.webp";
+import fregisImage from "../Assets/images/freg.webp";
 
 const About = () => {
   const teamMembers = [

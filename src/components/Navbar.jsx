@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import gecoreLogo from "../Assets/images/gecore-logo.png";
+import gecoreLogo from "../Assets/images/gecore-logo.webp";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);

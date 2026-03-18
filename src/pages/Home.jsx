@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import heroSectionImage from "../Assets/images/hero section.png";
+import heroSectionImage from "../Assets/images/hero section.webp";
 
 const Home = () => {
   const services = [
