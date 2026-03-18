@@ -161,7 +161,7 @@ const Portfolio = () => {
             {[
               { number: "100+", label: "Projects Completed" },
               { number: "50+", label: "Happy Clients" },
-              { number: "98%", label: "Client Satisfaction" },
+              { number: "100%", label: "Client Satisfaction" },
             ].map((stat, index) => (
               <motion.div
                 key={index}
