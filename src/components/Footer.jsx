@@ -7,21 +7,21 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container-custom">
+      <div className="container-custom px-4 sm:px-6 md:px-0">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 py-12 sm:py-16">
           {/* Company Info */}
-          <div className="space-y-4">
+          <div className="space-y-4 text-center sm:text-left sm:col-span-2 lg:col-span-1">
             <img
               src={gecoreLogo}
               alt="GECORE 360"
-              className="h-14 w-auto object-contain"
+              className="h-14 w-auto object-contain mx-auto sm:mx-0"
             />
             <p className="text-gray-400 font-roboto leading-relaxed">
               Transforming ideas into digital excellence. Your trusted partner
               for innovative web solutions.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex justify-center sm:justify-start space-x-4">
               <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gradient-primary transition-all duration-300"
@@ -216,11 +216,11 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4 md:gap-0">
             <p className="text-gray-400 text-sm">
               © {currentYear} GECORE 360. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
+            <div className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 md:mt-0">
               <a
                 href="#"
                 className="text-gray-400 hover:text-primary-green text-sm transition-colors"

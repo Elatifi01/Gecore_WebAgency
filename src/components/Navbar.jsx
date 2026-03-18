@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import gecoreLogo from "../Assets/images/gecore-logo.png";
@@ -6,6 +6,7 @@ import gecoreLogo from "../Assets/images/gecore-logo.png";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navRef = useRef(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -15,6 +16,34 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    const updateNavbarHeight = () => {
+      if (!navRef.current) {
+        return;
+      }
+
+      const { height } = navRef.current.getBoundingClientRect();
+      document.documentElement.style.setProperty(
+        "--navbar-height",
+        `${height}px`,
+      );
+    };
+
+    updateNavbarHeight();
+
+    const resizeObserver = new ResizeObserver(updateNavbarHeight);
+    if (navRef.current) {
+      resizeObserver.observe(navRef.current);
+    }
+
+    window.addEventListener("resize", updateNavbarHeight);
+
+    return () => {
+      resizeObserver.disconnect();
+      window.removeEventListener("resize", updateNavbarHeight);
+    };
+  }, [isScrolled, isMobileMenuOpen]);
 
   const navLinks = [
     { path: "/", label: "Home" },
@@ -28,6 +57,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
+      ref={navRef}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -35,9 +65,12 @@ const Navbar = () => {
         isScrolled ? "bg-white shadow-lg py-4" : "bg-white/95 py-6"
       }`}
     >
-      <div className="container-custom flex items-center justify-between">
+      <div className="container-custom relative flex items-center justify-between px-4 sm:px-6 md:px-0">
         {/* Logo */}
-        <Link to="/" className="flex items-center">
+        <Link
+          to="/"
+          className="absolute left-1/2 -translate-x-1/2 flex items-center md:static md:translate-x-0"
+        >
           <img
             src={gecoreLogo}
             alt="GECORE 360"
@@ -79,7 +112,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden text-gray-700 hover:text-primary-blue transition-colors"
+          className="md:hidden ml-auto text-gray-700 hover:text-primary-blue transition-colors"
           aria-label="Toggle menu"
         >
           <svg
@@ -108,7 +141,7 @@ const Navbar = () => {
           exit={{ opacity: 0, height: 0 }}
           className="md:hidden bg-white border-t border-gray-200 mt-4"
         >
-          <div className="container-custom py-4 flex flex-col space-y-4">
+          <div className="container-custom px-4 sm:px-6 md:px-0 py-4 flex flex-col space-y-4">
             {navLinks.map((link) => (
               <Link
                 key={link.path}

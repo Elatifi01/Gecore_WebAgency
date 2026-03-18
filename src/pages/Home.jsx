@@ -93,37 +93,40 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 pt-24">
-        <div className="container-custom">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section
+        className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 px-6 md:px-12 lg:px-24 overflow-hidden"
+        style={{ paddingTop: "var(--navbar-height, 96px)" }}
+      >
+        <div className="container-custom w-full">
+          <div className="grid md:grid-cols-2 gap-10 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="space-y-6"
+              className="space-y-6 text-center md:text-left"
             >
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold leading-tight">
                 Transform Your
                 <span className="block bg-gradient-primary bg-clip-text text-transparent">
                   Digital Presence
                 </span>
               </h1>
-              <p className="text-xl text-gray-600 font-roboto leading-relaxed">
+              <p className="text-lg sm:text-xl text-gray-600 font-roboto leading-relaxed max-w-2xl mx-auto md:mx-0">
                 We craft innovative digital solutions that elevate your brand
                 and drive measurable growth. Partner with GECORE 360 to bring
                 your vision to life.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Link to="/contact" className="btn-gradient">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
+                <Link to="/contact" className="btn-gradient w-full sm:w-auto text-center">
                   Start Your Project
                 </Link>
-                <Link to="/portfolio" className="btn-outline">
+                <Link to="/portfolio" className="btn-outline w-full sm:w-auto text-center">
                   View Our Work
                 </Link>
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 pt-8">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-8 max-w-md mx-auto md:mx-0">
                 <div>
                   <h3 className="text-4xl font-montserrat font-bold text-primary-blue">
                     360°
@@ -151,9 +154,9 @@ const Home = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
+              className="relative order-first md:order-none"
             >
-              <div className="relative w-full h-96 md:h-[500px] bg-gradient-primary rounded-3xl shadow-2xl overflow-hidden">
+              <div className="relative w-full h-72 sm:h-96 md:h-[500px] bg-gradient-primary rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden">
                 <img
                   src={heroSectionImage}
                   alt="Digital strategy presentation"
@@ -168,7 +171,7 @@ const Home = () => {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="absolute -top-6 -right-6 w-24 h-24 bg-primary-green/20 rounded-full blur-2xl"
+                className="hidden sm:block absolute -top-6 -right-6 w-24 h-24 bg-primary-green/20 rounded-full blur-2xl"
               />
               <motion.div
                 animate={{ y: [0, 20, 0] }}
@@ -177,7 +180,7 @@ const Home = () => {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary-blue/20 rounded-full blur-2xl"
+                className="hidden sm:block absolute -bottom-6 -left-6 w-32 h-32 bg-primary-blue/20 rounded-full blur-2xl"
               />
             </motion.div>
           </div>
