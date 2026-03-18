@@ -21,9 +21,9 @@ const Home = () => {
           />
         </svg>
       ),
-      title: "Web Development",
+      title: "Développement Web",
       description:
-        "Custom, responsive websites built with the latest technologies to drive your business forward.",
+        "Des sites web sur mesure et responsives, conçus avec les dernières technologies pour propulser votre activité.",
     },
     {
       icon: (
@@ -41,9 +41,9 @@ const Home = () => {
           />
         </svg>
       ),
-      title: "UI/UX Design",
+      title: "Design UI/UX",
       description:
-        "Beautiful, intuitive designs that provide exceptional user experiences and drive engagement.",
+        "Des designs beaux et intuitifs, offrant une expérience utilisateur exceptionnelle et favorisant l’engagement.",
     },
     {
       icon: (
@@ -61,9 +61,9 @@ const Home = () => {
           />
         </svg>
       ),
-      title: "Digital Marketing",
+      title: "Marketing Digital",
       description:
-        "Strategic marketing campaigns that amplify your brand and generate measurable results.",
+        "Des campagnes marketing stratégiques qui renforcent votre marque et génèrent des résultats mesurables",
     },
   ];
 
@@ -97,7 +97,7 @@ const Home = () => {
         className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 px-6 md:px-12 lg:px-24 overflow-hidden"
         style={{ paddingTop: "var(--navbar-height, 96px)" }}
       >
-        <div className="container-custom w-full">
+        <div className="container-custom w-full pt-3">
           <div className="grid md:grid-cols-2 gap-10 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -106,46 +106,46 @@ const Home = () => {
               className="space-y-6 text-center md:text-left"
             >
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold leading-tight">
-                Transform Your
+                Transformez votre
                 <span className="block bg-gradient-primary bg-clip-text text-transparent">
-                  Digital Presence
+                  présence en ligne
                 </span>
               </h1>
               <p className="text-lg sm:text-xl text-gray-600 font-roboto leading-relaxed max-w-2xl mx-auto md:mx-0">
-                We craft innovative digital solutions that elevate your brand
-                and drive measurable growth. Partner with GECORE 360 to bring
-                your vision to life.
+                Nous créons des solutions digitales innovantes qui valorisent
+                votre marque et génèrent une croissance mesurable. Partenaires
+                avec GECORE 360 pour donner vie à votre vision.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
                 <Link
                   to="/contact"
                   className="btn-gradient w-full sm:w-auto text-center"
                 >
-                  Start Your Project
+                  Commencez dès maintenant
                 </Link>
                 <Link
                   to="/portfolio"
                   className="btn-outline w-full sm:w-auto text-center"
                 >
-                  View Our Work
+                  Nos Réalisations
                 </Link>
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pb-4 pt-8 max-w-md mx-auto md:mx-0">
+              <div className="grid grid-cols-2 sm:grid-cols-2 gap-6 pb-4 pt-8 max-w-md mx-auto md:mx-0">
                 <div>
                   <h3 className="text-4xl font-montserrat font-bold text-primary-blue">
                     360°
                   </h3>
-                  <p className="text-gray-600 font-roboto">Digital Strategy</p>
+                  <p className="text-gray-600 font-roboto">
+                    Stratégie Digitale{" "}
+                  </p>
                 </div>
                 <div>
                   <h3 className="text-4xl font-montserrat font-bold text-primary-green">
-                    100%
+                    27/7
                   </h3>
-                  <p className="text-gray-600 font-roboto">
-                    Client Satisfaction
-                  </p>
+                  <p className="text-gray-600 font-roboto">support</p>
                 </div>
                 {/* <div>
                   <h3 className="text-4xl font-montserrat font-bold text-primary-blue">
@@ -204,26 +204,28 @@ const Home = () => {
             className="max-w-4xl mx-auto text-center space-y-6"
           >
             <h2 className="text-4xl md:text-5xl font-montserrat font-bold">
-              Who{" "}
+              Qui{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                We Are
+                Nous Sommes
               </span>
             </h2>
             <p className="text-lg text-gray-600 font-roboto leading-relaxed">
-              GECORE 360 is a forward-thinking digital agency dedicated to
-              transforming businesses through innovative technology and creative
-              excellence. With years of experience and a passionate team of
-              experts, we deliver solutions that not only meet but exceed
-              expectations.
+              GECORE 360 est une agence digitale avant-gardiste, dédiée à la
+              transformation des entreprises grâce à des technologies innovantes
+              et une créativité d’excellence. Forts de plusieurs années
+              d’expérience et d’une équipe passionnée d’experts, nous proposons
+              des solutions qui non seulement répondent aux attentes, mais les
+              surpassent.
             </p>
             <p className="text-lg text-gray-600 font-roboto leading-relaxed">
-              Our mission is to empower brands with cutting-edge digital
-              strategies, seamless user experiences, and measurable results. We
-              believe in building lasting partnerships based on trust,
-              transparency, and exceptional outcomes.
+              Notre mission est de donner aux marques les moyens de réussir
+              grâce à des stratégies digitales de pointe, des expériences
+              utilisateur fluides et des résultats mesurables. Nous croyons en
+              la construction de partenariats durables basés sur la confiance,
+              la transparence et l’excellence des résultats.
             </p>
             <Link to="/about" className="inline-block btn-outline mt-4">
-              Learn More About Us
+              En Savoir Plus
             </Link>
           </motion.div>
         </div>
@@ -240,14 +242,14 @@ const Home = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-montserrat font-bold mb-4">
-              Our{" "}
+              Nos{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Services
               </span>
             </h2>
             <p className="text-lg text-gray-600 font-roboto max-w-2xl mx-auto">
-              We offer comprehensive digital solutions tailored to your unique
-              business needs.
+              Nous proposons des solutions digitales complètes, adaptées aux
+              besoins uniques de votre entreprise.
             </p>
           </motion.div>
 
@@ -285,7 +287,7 @@ const Home = () => {
             className="text-center mt-12"
           >
             <Link to="/services" className="btn-gradient">
-              View All Services
+               Tous Les Services 
             </Link>
           </motion.div>
         </div>
@@ -351,17 +353,17 @@ const Home = () => {
             className="max-w-3xl mx-auto text-center space-y-6"
           >
             <h2 className="text-4xl md:text-5xl font-montserrat font-bold">
-              Ready to Start Your Project?
+              Prêt à Lancer Votre Projet ?
             </h2>
             <p className="text-xl font-roboto text-white/90">
-              Let's collaborate to bring your vision to life. Get in touch with
-              our team today.
+              Collaborons pour donner vie à votre vision. Contactez notre équipe
+              dès aujourd’hui.
             </p>
             <Link
               to="/contact"
               className="inline-block bg-white text-primary-blue font-montserrat font-semibold px-10 py-4 rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105"
             >
-              Get Started Now
+               Commencer Maintenant
             </Link>
           </motion.div>
         </div>

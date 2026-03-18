@@ -46,8 +46,8 @@ const Navbar = () => {
   }, [isScrolled, isMobileMenuOpen]);
 
   const navLinks = [
-    { path: "/", label: "Home" },
-    { path: "/about", label: "About Us" },
+    { path: "/", label: "Accueil" },
+    { path: "/about", label: "À Propos" },
     { path: "/services", label: "Services" },
     { path: "/portfolio", label: "Portfolio" },
     { path: "/contact", label: "Contact" },
@@ -65,7 +65,7 @@ const Navbar = () => {
         isScrolled ? "bg-white shadow-lg py-4" : "bg-white/95 py-6"
       }`}
     >
-      <div className="container-custom relative flex items-center justify-between px-4 sm:px-6 md:px-0">
+      <div className="container-custom relative flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-0">
         {/* Logo */}
         <Link
           to="/"
@@ -105,7 +105,7 @@ const Navbar = () => {
         {/* CTA Button */}
         <div className="hidden md:block">
           <Link to="/contact" className="btn-gradient">
-            Get Started
+            Commencer
           </Link>
         </div>
 
@@ -161,7 +161,7 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(false)}
               className="btn-gradient text-center"
             >
-              Get Started
+              Commencer
             </Link>
           </div>
         </motion.div>

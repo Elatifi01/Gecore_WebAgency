@@ -8,7 +8,7 @@ const About = () => {
   const teamMembers = [
     {
       name: "Haitam El Atifi",
-      role: "full-stack developer",
+      role: "Développeur Full-Stack",
       image: (
         <img
           src={haitamImage}
@@ -16,13 +16,13 @@ const About = () => {
           className="w-full h-full object-cover rounded-full"
         />
       ),
-      bio: "Passionate about full-stack development, focused on transforming bold ideas into scalable and innovative digital solutions through strong technical expertise and problem-solving.",
+      bio: "Passionné par le développement full-stack, je me concentre sur la transformation d’idées audacieuses en solutions digitales évolutives et innovantes grâce à une expertise technique solide et des compétences en résolution de problèmes.",
       linkedin: "https://www.linkedin.com/in/haitam-el-atifi-9a1b4b1b3/",
       github: "https://github.com/Elatifi01",
     },
     {
       name: "ATARGA ONDO Donel ",
-      role: "Front end developpers & designer graphic",
+      role: "Développeur Front-end & Designer Graphique",
       image: (
         <img
           src={donelImage}
@@ -30,13 +30,13 @@ const About = () => {
           className="w-full h-full object-cover rounded-full"
         />
       ),
-      bio: "Front-end Developer with a designer's eye,I strive to create bridges between technical complexity and visual clarity to enhance the user experience.",
+      bio: "Développeur Front-end avec un œil pour le design, je m'efforce de créer des ponts entre la complexité technique et la clarté visuelle pour améliorer l'expérience utilisateur.",
       linkedin: "https://ma.linkedin.com/in/atarga-ondo-donel-b7b2b0347",
       github: "https://github.com/Grhymm",
     },
     {
       name: "Fregis Omanda",
-      role: "Designer - Developper",
+      role: "Designer - Développeur",
       image: (
         <img
           src={fregisImage}
@@ -44,7 +44,7 @@ const About = () => {
           className="w-full h-full object-cover rounded-full"
         />
       ),
-      bio: "Driven by a deep fascination with visual storytelling and technology, this self-taught journey is shaped by continuous learning, experimentation, and a commitment to mastering new techniques.",
+      bio: "Porté par une profonde fascination pour le storytelling visuel et la technologie, ce parcours autodidacte est façonné par un apprentissage continu, l’expérimentation et un engagement à maîtriser de nouvelles techniques.",
       github: "https://github.com/Fregis241",
     },
   ];
@@ -68,7 +68,7 @@ const About = () => {
       ),
       title: "Innovation",
       description:
-        "We constantly push boundaries and embrace new technologies to deliver cutting-edge solutions.",
+        "Nous repoussons constamment les limites et adoptons de nouvelles technologies pour fournir des solutions à la pointe.",
     },
     {
       icon: (
@@ -86,9 +86,9 @@ const About = () => {
           />
         </svg>
       ),
-      title: "Quality",
+      title: "Qualité",
       description:
-        "Excellence is our standard. Every project receives meticulous attention to detail and craftsmanship.",
+        "L’excellence est notre standard. Chaque projet bénéficie d’une attention méticuleuse aux détails et d’un savoir-faire irréprochable.",
     },
     {
       icon: (
@@ -108,7 +108,7 @@ const About = () => {
       ),
       title: "Collaboration",
       description:
-        "We believe in the power of teamwork, building strong partnerships with our clients.",
+        "Nous croyons au pouvoir du travail en équipe, en construisant des partenariats solides avec nos clients.",
     },
     {
       icon: (
@@ -126,9 +126,9 @@ const About = () => {
           />
         </svg>
       ),
-      title: "Agility",
+      title: "Agilité",
       description:
-        "We adapt quickly to changes and deliver solutions with speed without compromising quality.",
+        "Nous nous adaptons rapidement aux changements et livrons des solutions avec rapidité sans compromettre la qualité.",
     },
   ];
 
@@ -158,14 +158,18 @@ const About = () => {
             className="max-w-4xl mx-auto text-center space-y-6"
           >
             <h1 className="text-5xl md:text-6xl font-montserrat font-bold">
-              About{" "}
+              À Propos de{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 GECORE 360
               </span>
             </h1>
             <p className="text-xl text-gray-600 font-roboto leading-relaxed">
-              We are a team of passionate innovators, designers, and developers
-              committed to transforming businesses through digital excellence.
+              Nous sommes une agence créative et dynamique spécialisée dans le
+              développement web et mobile, le design d'interface utilisateur, la
+              création d'identité de marque, le développement d'e-commerce, le
+              référencement et le marketing numérique. Nous nous engageons à
+              fournir des solutions innovantes et personnalisées pour répondre
+              aux besoins de nos clients.
             </p>
           </motion.div>
         </div>
@@ -198,13 +202,15 @@ const About = () => {
                 </svg>
               </div>
               <h2 className="text-3xl font-montserrat font-bold text-primary-blue">
-                Our Mission
+                Notre Mission
               </h2>
               <p className="text-gray-600 font-roboto leading-relaxed">
-                To empower businesses with innovative digital solutions that
-                drive growth, enhance user experiences, and create lasting
-                value. We strive to be more than just a service provider—we aim
-                to be a trusted partner in your digital journey.
+                Notre mission est de fournir à nos clients des services de haute
+                qualité pour les aider à atteindre leurs objectifs commerciaux.
+                Nous travaillons en étroite collaboration avec nos clients pour
+                comprendre leurs besoins et leurs défis, afin de leur fournir
+                des solutions sur mesure qui répondent à leurs besoins
+                spécifiques.
               </p>
             </motion.div>
 
@@ -238,14 +244,14 @@ const About = () => {
                 </svg>
               </div>
               <h2 className="text-3xl font-montserrat font-bold text-primary-green">
-                Our Vision
+                Notre Vision
               </h2>
               <p className="text-gray-600 font-roboto leading-relaxed">
-                To be recognized as a global leader in digital innovation,
-                setting industry standards for creativity, technical excellence,
-                and client satisfaction. We envision a future where every
-                business, regardless of size, has access to world-class digital
-                solutions.
+                Chaque projet est unique. C'est pourquoi nous privilégions une
+                immersion totale dans vos enjeux pour concevoir des solutions
+                sur mesure. Notre mission ? Allier l'excellence technique à une
+                maîtrise de vos coûts, garantissant ainsi un retour sur
+                investissement optimal pour votre activité.
               </p>
             </motion.div>
           </div>
@@ -263,34 +269,37 @@ const About = () => {
             className="max-w-4xl mx-auto space-y-6"
           >
             <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-center mb-12">
-              Our{" "}
+              Notre{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Story
+                Histoire
               </span>
             </h2>
             <div className="space-y-6 text-gray-600 font-roboto leading-relaxed text-lg">
               <p>
-                GECORE 360 was born from a simple yet powerful idea: businesses
-                deserve digital solutions that are both innovative and
-                accessible. We are a freshly launched, full-service digital
-                agency, bringing together a passionate team of developers,
-                designers, and strategists ready to make a mark on the digital
-                landscape.
+                GECORE 360 est née d’une idée simple mais puissante : les
+                entreprises méritent des solutions digitales à la fois
+                innovantes et accessibles. Nous sommes une agence digitale
+                récente, offrant des services complets, et réunissant une équipe
+                passionnée de développeurs, designers et stratèges prête à
+                laisser sa marque dans le paysage digital.
               </p>
               <p>
-                Built for the modern era, we are stepping into the industry
-                fully equipped with the latest skills and technologies to meet
-                the rapidly evolving needs of today's businesses. While our
-                journey as an agency is just beginning, our foundation is built
-                on an unwavering commitment to excellence. We are dedicated to
-                turning bold ideas into successful projects and building lasting
-                client relationships right from day one.
+                Conçus pour l’ère moderne, nous entrons dans le secteur
+                pleinement équipés des compétences et technologies les plus
+                récentes pour répondre aux besoins en constante évolution des
+                entreprises d’aujourd’hui. Bien que notre parcours en tant
+                qu’agence ne fasse que commencer, notre fondation repose sur un
+                engagement inébranlable envers l’excellence. Nous nous
+                consacrons à transformer des idées audacieuses en projets
+                réussis et à construire dès le premier jour des relations
+                durables avec nos clients.
               </p>
               <p>
-                Today, GECORE 360 stands at the exciting intersection of
-                creativity and technology, where passion meets purpose. We are
-                thrilled to officially open our doors and are incredibly excited
-                to partner with you to build the digital future.
+                Aujourd’hui, GECORE 360 se situe à l’intersection passionnante
+                de la créativité et de la technologie, là où la passion
+                rencontre l’objectif. Nous sommes ravis d’ouvrir officiellement
+                nos portes et très enthousiastes à l’idée de collaborer avec
+                vous pour construire le futur digital.
               </p>
             </div>
           </motion.div>
@@ -308,14 +317,14 @@ const About = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-montserrat font-bold mb-4">
-              Meet Our{" "}
+              Découvrez Notre{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Team
+                Équipe
               </span>
             </h2>
             <p className="text-lg text-gray-600 font-roboto max-w-2xl mx-auto">
-              A diverse group of talented professionals united by a passion for
-              digital excellence.
+              Un groupe divers de professionnels talentueux unis par une passion
+              pour l’excellence digitale.
             </p>
           </motion.div>
 
@@ -389,14 +398,14 @@ const About = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-montserrat font-bold mb-4">
-              Our{" "}
+              Nos{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Values
+                Valeurs
               </span>
             </h2>
             <p className="text-lg text-gray-600 font-roboto max-w-2xl mx-auto">
-              The principles that guide every decision we make and every project
-              we undertake.
+              Les principes qui guident chacune de nos décisions et chaque
+              projet que nous entreprenons.
             </p>
           </motion.div>
 

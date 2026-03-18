@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container-custom px-4 sm:px-6 md:px-0">
+      <div className="container-custom px-4 sm:px-6 md:px-8 lg:px-0">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 py-12 sm:py-16">
           {/* Company Info */}
@@ -18,8 +18,8 @@ const Footer = () => {
               className="h-14 w-auto object-contain mx-auto sm:mx-0"
             />
             <p className="text-gray-400 font-roboto leading-relaxed">
-              Transforming ideas into digital excellence. Your trusted partner
-              for innovative web solutions.
+              Transformer les idées en excellence digitale. Votre partenaire de
+              confiance pour des solutions web innovantes.
             </p>
             <div className="flex justify-center sm:justify-start space-x-4">
               <a
@@ -80,7 +80,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h4 className="text-lg font-montserrat font-semibold mb-4">
-              Quick Links
+              Liens Rapides
             </h4>
             <ul className="space-y-2">
               <li>
@@ -88,7 +88,7 @@ const Footer = () => {
                   to="/"
                   className="text-gray-400 hover:text-primary-green transition-colors"
                 >
-                  Home
+                  Accueil
                 </Link>
               </li>
               <li>
@@ -96,7 +96,7 @@ const Footer = () => {
                   to="/about"
                   className="text-gray-400 hover:text-primary-green transition-colors"
                 >
-                  About Us
+                  À Propos
                 </Link>
               </li>
               <li>
@@ -129,23 +129,23 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h4 className="text-lg font-montserrat font-semibold mb-4">
-              Our Services
+              Nos Services
             </h4>
             <ul className="space-y-2 text-gray-400">
               <li className="hover:text-primary-green transition-colors cursor-pointer">
-                Web Development
+                Développement Web
               </li>
               <li className="hover:text-primary-green transition-colors cursor-pointer">
-                UI/UX Design
+                Design UI/UX
               </li>
               <li className="hover:text-primary-green transition-colors cursor-pointer">
-                Digital Marketing
+                Marketing Digital
               </li>
               <li className="hover:text-primary-green transition-colors cursor-pointer">
-                Mobile Apps
+                Applications Mobiles
               </li>
               <li className="hover:text-primary-green transition-colors cursor-pointer">
-                Brand Strategy
+                Stratégie de Marque
               </li>
             </ul>
           </div>
@@ -208,7 +208,7 @@ const Footer = () => {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <span>+212 5xxxxxxxx</span>
+                <span>+212 631-821612</span>
               </li>
             </ul>
           </div>

@@ -20,16 +20,16 @@ const Services = () => {
           />
         </svg>
       ),
-      title: "Web Development",
+      title: "Développement Web",
       description:
-        "Custom, responsive websites and web applications built with cutting-edge technologies.",
+        "Sites web et applications web sur mesure, responsives, développés avec des technologies de pointe.",
       features: [
-        "Custom Website Development",
-        "E-commerce Solutions",
-        "Progressive Web Apps (PWA)",
-        "Backend API Development",
-        "CMS Integration",
-        "Performance Optimization",
+        "Développement de sites web personnalisés",
+        "Solutions e-commerce",
+        "Applications Web Progressives (PWA)",
+        "Développement d’API Backend",
+        "Intégration CMS",
+        "Optimisation des performances",
       ],
       color: "blue",
     },
@@ -49,16 +49,16 @@ const Services = () => {
           />
         </svg>
       ),
-      title: "UI/UX Design",
+      title: "Design UI/UX",
       description:
-        "Beautiful, intuitive designs focused on delivering exceptional user experiences.",
+        "Des designs beaux et intuitifs, axés sur une expérience utilisateur exceptionnelle.",
       features: [
-        "User Research & Testing",
-        "Wireframing & Prototyping",
-        "Interface Design",
-        "Design Systems",
-        "Mobile App Design",
-        "Usability Audits",
+        "Recherche utilisateur & tests",
+        "Wireframing & prototypage",
+        "Conception d’interfaces",
+        "Systèmes de design",
+        "Design d’applications mobiles",
+        "Audits d’utilisabilité",
       ],
       color: "green",
     },
@@ -78,16 +78,16 @@ const Services = () => {
           />
         </svg>
       ),
-      title: "Digital Marketing",
+      title: "Marketing Digital",
       description:
-        "Data-driven marketing strategies that amplify your brand and drive measurable results.",
+        "Stratégies de marketing axées sur les données qui amplifient votre marque et génèrent des résultats mesurables.",
       features: [
-        "SEO Optimization",
-        "Social Media Marketing",
-        "Content Strategy",
-        "PPC Campaigns",
+        "Optimisation SEO",
+        "Marketing sur les réseaux sociaux",
+        "Stratégie de contenu",
+        "Campagnes PPC",
         "Email Marketing",
-        "Analytics & Reporting",
+        "Analyse & reporting",
       ],
       color: "blue",
     },
@@ -107,16 +107,16 @@ const Services = () => {
           />
         </svg>
       ),
-      title: "Mobile App Development",
+      title: "Développement d’Applications Mobiles",
       description:
-        "Native and cross-platform mobile applications that engage and delight users.",
+        "Applications mobiles natives et multiplateformes qui engagent et séduisent les utilisateurs..",
       features: [
-        "iOS Development",
-        "Android Development",
-        "React Native Apps",
-        "App Store Optimization",
-        "Push Notifications",
-        "Offline Functionality",
+        "Développement iOS",
+        "Développement Android",
+        "Applications React Native",
+        "Optimisation App Store",
+        "Notifications push",
+        "Fonctionnalités hors ligne",
       ],
       color: "green",
     },
@@ -136,16 +136,16 @@ const Services = () => {
           />
         </svg>
       ),
-      title: "Brand Identity",
+      title: "Identité de Marque",
       description:
-        "Comprehensive branding solutions that establish memorable and impactful brand presence.",
+        " solutions de branding qui établissent une présence de marque mémorable et impactante.",
       features: [
-        "Logo Design",
-        "Brand Guidelines",
-        "Visual Identity",
-        "Marketing Collateral",
-        "Brand Strategy",
-        "Brand Positioning",
+        "Conception de logo",
+        "Conception de logo",
+        "Identité visuelle",
+        "Supports marketing",
+        "Stratégie de marque",
+        "Positionnement de marque",
       ],
       color: "blue",
     },
@@ -177,14 +177,14 @@ const Services = () => {
             className="max-w-4xl mx-auto text-center space-y-6"
           >
             <h1 className="text-5xl md:text-6xl font-montserrat font-bold">
-              Our{" "}
+              Nos{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Services
               </span>
             </h1>
             <p className="text-xl text-gray-600 font-roboto leading-relaxed">
-              Comprehensive digital solutions tailored to elevate your business
-              and drive meaningful results.
+              Des solutions digitales complètes, conçues pour valoriser votre
+              entreprise et générer des résultats concrets.
             </p>
           </motion.div>
         </div>
@@ -250,7 +250,7 @@ const Services = () => {
                       : "bg-primary-green/10 text-primary-green hover:bg-primary-green hover:text-white"
                   }`}
                 >
-                  Learn More
+                  En Savoir Plus
                 </button>
               </motion.div>
             ))}
@@ -269,14 +269,14 @@ const Services = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-montserrat font-bold mb-4">
-              Our{" "}
+              Notre{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Process
+                Processus
               </span>
             </h2>
             <p className="text-lg text-gray-600 font-roboto max-w-2xl mx-auto">
-              A proven methodology that ensures successful project delivery
-              every time.
+              Une méthodologie éprouvée qui garantit la réussite de chaque
+              projet.
             </p>
           </motion.div>
 
@@ -284,27 +284,27 @@ const Services = () => {
             {[
               {
                 number: "01",
-                title: "Discovery",
+                title: "Découverte",
                 description:
-                  "We start by understanding your goals, challenges, and target audience.",
+                  "Nous commençons par comprendre vos objectifs, vos défis et votre public cible.",
               },
               {
                 number: "02",
-                title: "Strategy",
+                title: "Stratégie",
                 description:
-                  "We develop a comprehensive plan tailored to your specific needs.",
+                  "Nous développons un plan complet adapté à vos besoins spécifiques.",
               },
               {
                 number: "03",
-                title: "Execution",
+                title: "Exécution",
                 description:
-                  "Our team brings your vision to life with precision and creativity.",
+                  "Notre équipe donne vie à votre vision avec précision et créativité.",
               },
               {
                 number: "04",
-                title: "Delivery",
+                title: "Livraison",
                 description:
-                  "We launch your project and provide ongoing support and optimization.",
+                  "Nous lançons votre projet et fournissons un support continu ainsi qu'une optimisation.",
               },
             ].map((step, index) => (
               <motion.div
@@ -345,20 +345,20 @@ const Services = () => {
             whileInView="animate"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="max-w-3xl mx-auto text-center space-y-6"
+            className="max-w-4xl mx-auto text-center space-y-6"
           >
             <h2 className="text-4xl md:text-5xl font-montserrat font-bold">
-              Let's Build Something Amazing Together
+              Construisons Ensemble Quelque Chose d’Exceptionnel
             </h2>
             <p className="text-xl font-roboto text-white/90">
-              Ready to transform your digital presence? Get in touch with us
-              today.
+              Prêt à transformer votre présence digitale ? Contactez-nous dès
+              aujourd'hui.
             </p>
             <Link
               to="/contact"
               className="inline-block bg-white text-primary-blue font-montserrat font-semibold px-10 py-4 rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105"
             >
-              Start Your Project
+              Démarrer Votre Projet 
             </Link>
           </motion.div>
         </div>

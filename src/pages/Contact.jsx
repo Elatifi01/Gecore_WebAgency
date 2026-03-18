@@ -73,8 +73,8 @@ const Contact = () => {
         </svg>
       ),
       title: "Phone",
-      details: "+212 5xxxxxxxx",
-      subdetails: "+212 6xxxxxxxx",
+      details: "+212 631-821612",
+      // subdetails: "+212 6",
     },
     {
       icon: (
@@ -100,7 +100,7 @@ const Contact = () => {
       ),
       title: "Address",
       details: "Casablanca, Morocco",
-      subdetails: "cfc 20000",
+      // subdetails: "cfc 20000",
     },
     {
       icon: (
@@ -150,14 +150,14 @@ const Contact = () => {
             className="max-w-4xl mx-auto text-center space-y-6"
           >
             <h1 className="text-5xl md:text-6xl font-montserrat font-bold">
-              Get In{" "}
+              Contactez-{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Touch
+                Nous
               </span>
             </h1>
             <p className="text-xl text-gray-600 font-roboto leading-relaxed">
-              Have a question or ready to start your project? We'd love to hear
-              from you.
+              Vous avez une question ou vous êtes prêt à commencer votre projet?
+              Nous aimerions beaucoup entendre de vous.
             </p>
           </motion.div>
         </div>
@@ -176,11 +176,11 @@ const Contact = () => {
             >
               <div className="card p-8 md:p-10">
                 <h2 className="text-3xl font-montserrat font-bold mb-2">
-                  Send Us a Message
+                  Envoyez-nous un message
                 </h2>
                 <p className="text-gray-600 font-roboto mb-8">
-                  Fill out the form below and we'll get back to you within 24
-                  hours.
+                  Remplissez le formulaire ci-dessous et nous vous répondrons
+                  dans les 24 heures.
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -189,7 +189,7 @@ const Contact = () => {
                       htmlFor="name"
                       className="block text-sm font-montserrat font-semibold text-gray-700 mb-2"
                     >
-                      Full Name *
+                      Nom Complet *
                     </label>
                     <input
                       type="text"
@@ -209,7 +209,7 @@ const Contact = () => {
                         htmlFor="email"
                         className="block text-sm font-montserrat font-semibold text-gray-700 mb-2"
                       >
-                        Email Address *
+                        Adresse Email *
                       </label>
                       <input
                         type="email"
@@ -219,7 +219,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-blue focus:border-transparent transition-all font-roboto"
-                        placeholder="john@example.com"
+                        placeholder="email@example.com"
                       />
                     </div>
 
@@ -228,7 +228,7 @@ const Contact = () => {
                         htmlFor="phone"
                         className="block text-sm font-montserrat font-semibold text-gray-700 mb-2"
                       >
-                        Phone Number
+                        Numéro de Téléphone *
                       </label>
                       <input
                         type="tel"
@@ -237,7 +237,7 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-blue focus:border-transparent transition-all font-roboto"
-                        placeholder="+1 (555) 123-4567"
+                        placeholder="+212 6xx-xxxxxx"
                       />
                     </div>
                   </div>
@@ -247,7 +247,7 @@ const Contact = () => {
                       htmlFor="subject"
                       className="block text-sm font-montserrat font-semibold text-gray-700 mb-2"
                     >
-                      Subject *
+                      Sujet *
                     </label>
                     <input
                       type="text"
@@ -257,7 +257,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-blue focus:border-transparent transition-all font-roboto"
-                      placeholder="Project Inquiry"
+                      placeholder="Demande de Projet"
                     />
                   </div>
 
@@ -276,7 +276,7 @@ const Contact = () => {
                       required
                       rows="6"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-blue focus:border-transparent transition-all resize-none font-roboto"
-                      placeholder="Tell us about your project..."
+                      placeholder="Parlez-nous de votre projet…"
                     />
                   </div>
 
@@ -286,12 +286,12 @@ const Contact = () => {
                       animate={{ opacity: 1, y: 0 }}
                       className="p-4 bg-primary-green/10 border border-primary-green text-primary-green rounded-lg font-roboto"
                     >
-                      Thank you! Your message has been sent successfully.
+                      Merci ! Votre message a été envoyé avec succès.{" "}
                     </motion.div>
                   )}
 
                   <button type="submit" className="btn-gradient w-full">
-                    Send Message
+                    Envoyer le message
                   </button>
                 </form>
               </div>
@@ -307,10 +307,11 @@ const Contact = () => {
             >
               <motion.div variants={fadeInUp}>
                 <h2 className="text-3xl font-montserrat font-bold mb-2">
-                  Contact Information
+                  Informations de Contact
                 </h2>
                 <p className="text-gray-600 font-roboto mb-8">
-                  Reach out to us through any of the following channels.
+                  Vous pouvez nous contacter par téléphone, email ou via le
+                  formulaire ci-dessous.
                 </p>
               </motion.div>
 
@@ -377,13 +378,11 @@ const Contact = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-montserrat font-bold mb-4">
-              Frequently Asked{" "}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Questions
-              </span>
+              Foire Aux Questions
             </h2>
             <p className="text-lg text-gray-600 font-roboto max-w-2xl mx-auto">
-              Quick answers to common questions about our services and process.
+              Réponses rapides aux questions courantes concernant nos services
+              et notre processus.{" "}
             </p>
           </motion.div>
 
@@ -396,24 +395,26 @@ const Contact = () => {
           >
             {[
               {
-                question: "What is your typical project timeline?",
+                question: "Quel est votre délai de projet typique ?",
                 answer:
-                  "Project timelines vary based on scope and complexity. A standard website typically takes 4-8 weeks from concept to launch.",
+                  "Les délais des projets varient en fonction de l'ampleur et de la complexité. Un site web standard prend généralement entre 4 et 8 semaines depuis la conception jusqu'au lancement.",
               },
               {
-                question: "Do you offer ongoing support and maintenance?",
+                question:
+                  "Offrez-vous un support et une maintenance continus ?",
                 answer:
-                  "Yes, we provide comprehensive maintenance packages to ensure your digital assets remain secure, updated, and optimized.",
+                  "Oui, nous proposons des packages de maintenance complets pour nous assurer que vos actifs numériques restent sécurisés, à jour et optimisés.",
               },
               {
-                question: "What is your pricing structure?",
+                question: "Quel est votre structure de tarification ?",
                 answer:
-                  "We offer flexible pricing based on project requirements. Contact us for a detailed quote tailored to your specific needs.",
+                  "Nous proposons une tarification flexible basée sur les exigences du projet. Contactez-nous pour obtenir un devis détaillé adapté à vos besoins spécifiques.",
               },
               {
-                question: "Can you work with our existing brand guidelines?",
+                question:
+                  "Pouvez-vous travailler avec nos directives de marque existantes ?",
                 answer:
-                  "Absolutely! We work seamlessly with existing brand guidelines or help develop new ones if needed.",
+                  "Absolument ! Nous collaborons en toute simplicité avec les directives de marque existantes ou nous aidons à en développer de nouvelles si nécessaire.",
               },
             ].map((faq, index) => (
               <motion.div key={index} variants={fadeInUp} className="card p-6">
